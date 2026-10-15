@@ -1,0 +1,105 @@
+# Datasets and manifests
+data/
+**/data/
+raw/
+processed/
+splits/
+*.jsonl
+*.tsv
+*.scp
+text
+utt2spk
+spk2utt
+segments
+metadata.csv
+kaggle_download/
+
+# Checkpoints and model weights
+runs/
+**/runs/
+artifacts/
+**/artifacts/
+checkpoints/
+**/checkpoint-*/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.msgpack
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.opus
+*.wma
+
+# Keep showcase samples in InferenceOutput
+!InferenceOutput/*.wav
+!InferenceOutput/*.mp3
+!InferenceOutput/videos/*.mp4
+!InferenceOutput/README.md
+
+# Secrets and environment configs
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+*.pfx
+*.p12
+*.cert
+*.crt
+*token*
+credentials.json
+client_secret*.json
+
+# Logs and tracking
+wandb/
+*.log
+gpu_monitor*.csv
+votes.csv
+eval_results.json
+
+# Caches and external clones
+.cache/
+**/.cache/
+hf_cache/
+huggingface/
+torch_cache/
+qwen_commit.txt
+Qwen3-TTS/
+
+# Python and virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Editor and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
